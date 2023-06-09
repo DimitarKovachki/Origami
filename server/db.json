@@ -1,12 +1,14 @@
 {
     "origami": [
         {
-            "id": 1,
-            "author": "Mitko"
+            "id": "1",
+            "author": "Mitko",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quis."
         },
         {
-            "id": 2,
-            "author": "Pesho"
+            "id": "2",
+            "author": "Pesho",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quis.ing elit. adipisicing elit. Voluptatum, quis.ing elit. Voluptatum, quis adipisicing elit. Voluptatum, quis.ing elit. Voluptatum, quis Voluptatum, quis. adipisicing elit. Voluptatum, quis.ing elit. Voluptatum, quis"
         }
     ]
 }

@@ -1,0 +1,14 @@
+.post {
+    margin: 100px;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    padding: 15px 25px;
+}
+
+img {
+    width: 35px;
+    height: 35px;
+}
