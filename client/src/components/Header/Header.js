@@ -1,4 +1,4 @@
-
+import { Link, NavLink } from "react-router-dom";
 function Header() {
     return (
         <header className="app-header">
@@ -8,37 +8,45 @@ function Header() {
                 </div>
                 <ul className="header-nav-list">
                     <li className="header-list-item">
-                        <a href="#">1</a>
+                        <Link to={"/"}>
+                            Home
+                        </Link>
                     </li>
                     <li className="header-list-item">
-                        <a href="#">2</a>
+                        <Link to={"/about"}>
+                            About
+                        </Link>
+                    </li>
+
+                    <li className="header-list-item">
+                        <Link to={"/contact-us"}>
+                            Contact Us
+                        </Link>
                     </li>
                     <li className="header-list-item">
-                        <a href="#">3</a>
+                        <Link to="/about/pesho">
+                            Pesho
+                        </Link>
                     </li>
                     <li className="header-list-item">
-                        <a href="#">4</a>
+                        <Link to={"/about/gosho"}>
+                            Gosho
+                        </Link>
                     </li>
                     <li className="header-list-item">
-                        <a href="#">5</a>
+                        <NavLink to={"/about/toshko"}>
+                            Toshko
+                        </NavLink>
                     </li>
                     <li className="header-list-item">
-                        <a href="#">6</a>
+                        <NavLink to={"/about/new"}>
+                            New About
+                        </NavLink>
                     </li>
                     <li className="header-list-item">
-                        <a href="#">7</a>
-                    </li>
-                    <li className="header-list-item">
-                        <a href="#">8</a>
-                    </li>
-                    <li className="header-list-item">
-                        <a href="#">9</a>
-                    </li>
-                    <li className="header-list-item">
-                        <a href="#">10</a>
-                    </li>
-                    <li className="header-list-item">
-                        <a href="#">11</a>
+                        <Link to={"/testForNotFouthing"}>
+                            Undefined Page
+                        </Link>
                     </li>
                 </ul>
             </div>

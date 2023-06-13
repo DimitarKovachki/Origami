@@ -24,7 +24,7 @@ ul {
 			text-align: center;
 			display: flex;
 			width: 100%;
-			justify-content: space-between;
+			justify-content: space-evenly;
 			.header-list-item {
 				font-size: 24px;
 				padding: 0 25px;
@@ -108,4 +108,11 @@ ul {
 			}
 		}
 	}
+}
+
+// About
+
+.container-aboutLayout {
+	display: flex;
+	flex-direction: column;
 }
