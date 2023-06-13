@@ -1,14 +1,14 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 function Header() {
     return (
         <header className="app-header">
             <div className="header-container">
                 <div className="logo-wrapper">
-                    <img src="logo/logo.png" alt="" />
+                    <img src="../logo/logo.png" alt="" />
                 </div>
                 <ul className="header-nav-list">
                     <li className="header-list-item">
-                        <Link to={"/"}>
+                        <Link to={"/"} state="Hi"> 
                             Home
                         </Link>
                     </li>

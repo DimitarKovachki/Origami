@@ -23,7 +23,8 @@ class App extends Component {
     super(props)
     this.state = {
       posts: [],
-      selectedPost: null
+      selectedPost: null,
+      location: null
     }
   }
 
@@ -45,8 +46,11 @@ class App extends Component {
     }
   }
 
+
+
   render() {
 
+    
     return (
       <>
         <Header></Header>
@@ -58,7 +62,6 @@ class App extends Component {
             selectedList={this.state.idPost}
           >
           </Aside>
-
           <Routes>
             <Route path="/" element={
               <Main posts={this.getPosts()}></Main>

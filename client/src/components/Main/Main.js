@@ -1,5 +1,6 @@
 import Post from "../Post/Post";
 
+
 function Main({ posts }) {
     return (
         <main className="app-main" >
