@@ -24,7 +24,6 @@ class App extends Component {
     this.state = {
       posts: [],
       selectedPost: null,
-      location: null
     }
   }
 
@@ -42,15 +41,17 @@ class App extends Component {
     if (!this.state.selectedPost) {
       return this.state.posts
     } else {
-      return [this.state.posts.find(x => x.id === this.state.selectedPost)]
+      let findPostId = [this.state.posts.find(x => Number(x.id) === this.state.selectedPost)];
+      
+      if (findPostId !== undefined) {
+        return findPostId; 
+      }
     }
   }
 
 
 
   render() {
-
-    
     return (
       <>
         <Header></Header>
@@ -87,18 +88,4 @@ class App extends Component {
   }
 }
 
-
 export default App;
-
-// function App() {
-//   return (
-//     <body>
-//       <Header></Header>
-//       <div className="container">
-//         <Aside></Aside>
-//         <Main></Main>
-//       </div>
-//       <Footer></Footer>
-//     </body>
-//   );
-// }
