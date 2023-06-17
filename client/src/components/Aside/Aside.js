@@ -2,9 +2,7 @@ import { useState } from 'react';
 import { listItem } from './ItemsConstants';
 // import AsideItems from './AsideItems'
 
-function Aside({
-        onAsideItemClick
-    }) {
+function Aside({onAsideItemClick, allPosts}) {
 
     const [currentItem, setCurrentItem] = useState();
 

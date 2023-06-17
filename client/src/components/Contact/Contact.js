@@ -90,7 +90,7 @@ class ContactUs extends Component {
                     </select>
 
                     <label htmlFor="email">Email</label>
-                    <span className={ this.state.errors.email ? 'validate-input' : '' }>Invalid input!</span>
+                    <span className={ this.state.errors.email ? 'validate-input' : '' }>This input need to include @!</span>
                     <input
                         // Refference element
                         ref={this.emailInput}

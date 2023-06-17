@@ -6,3 +6,7 @@ export let listItem = [
     { 'id': 5 },
     { 'id': 6 },
 ]
+
+// export const listItem = () => {
+//     return fetch('http://localhost:4000/origami').then(resp => resp.json()).catch(error => console.log(error))
+// }

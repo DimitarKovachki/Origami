@@ -12,6 +12,7 @@ import About from './components/About/About';
 import AboutNew from './components/About/AboutNew';
 import AboutLayout from './components/About/AboutLayout';
 import ContactUs from './components/Contact/Contact';
+import CreatePost from './components/CreatePost/CreatePost';
 import Footer from './components/Footer/Footer';
 import NotFound from './components/NotFound/NotFound';
 
@@ -42,9 +43,9 @@ class App extends Component {
       return this.state.posts
     } else {
       let findPostId = [this.state.posts.find(x => Number(x.id) === this.state.selectedPost)];
-      
+
       if (findPostId !== undefined) {
-        return findPostId; 
+        return findPostId;
       }
     }
   }
@@ -73,7 +74,7 @@ class App extends Component {
               <Route path=":name" element={<About />} />
               <Route path="new" element={<AboutNew />} />
             </Route>
-
+            <Route path='/create/post' element={<CreatePost />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
